@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+      
+<head>
+    <title>Media Query</title>
+      
+    <style>
+	*{
+box-sizing:border-box;
+
+}
+
+.main {
+	width:90%;
+	padding:20px;
+margin:0px auto;
+display: flex;
+}
+.content1 {
+background:#ddd;
+width:50%;
+margin:5px;
+height:200px;
+}
+.content2 {
+background:#f00;
+width:50%;
+height:200px;
+margin:5px;
+}
+          
+        /* Media Query for Mobile Devices */
+        @media (max-width: 480px) {
+            body {
+                background-color: red;
+            }
+            .main {
+                display:block;
+
+            }
+            .content1,.content2 {
+                width: 100%;
+            }
+        }
+          
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 767px) {
+            body {
+                background-color: yellow;
+            }
+            .main {
+                display:block;
+
+            }
+            .content1,.content2 {
+                width: 100%;
+            }
+        }
+          
+        /* Media Query for Tablets Ipads portrait mode */
+        @media (min-width: 768px) and (max-width: 1024px){
+            body {
+                background-color: blue;
+            }
+            .main {
+                display:block;
+
+            }
+            .content1,.content2 {
+                width: 100%;
+            }
+        }
+          
+        /* Media Query for Laptops and Desktops */
+        @media (min-width: 1025px) and (max-width: 1280px){
+            body {
+                background-color: green;
+            }
+        }
+          
+        /* Media Query for Large screens */
+        @media (min-width: 1281px) {
+            body {
+                background-color: white;
+            }
+        }
+
+
+
+    </style>
+</head>
+  
+<body style = "text-align:center;">
+  
+    <h2>Media Query</h2>
+	
+	<div class="main">
+	<div class="content1"></div>
+	<div class="content2"></div>
+	</div>
+
+
+</body>
+  
+</html>  
